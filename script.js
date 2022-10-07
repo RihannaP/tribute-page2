@@ -26,12 +26,14 @@ const getHeader = document.querySelectorAll("header"),
   getImage = document.querySelectorAll("img"),
   getWords = document.body.innerText;
 
+
 var images;
 
 
+images = ['https://cdn.tinybuddha.com/wp-content/uploads/2015/09/Follow-Your-Dreams1.png'];
+
 
 document.getElementById('next').addEventListener('click', (event) => {
-  images = ['https://cdn.tinybuddha.com/wp-content/uploads/2015/09/Follow-Your-Dreams1.png'];
   let element_img = document.getElementById('img');
   images.push(images[0]);
   element_img.setAttribute("src", images.shift());
@@ -44,7 +46,6 @@ document.getElementById('previous').addEventListener('click', (event) => {
   element_img2.setAttribute("src", images.pop());
 
 });
-
 /* =================
    ASSERTIONS 
    These are the things we check are true about your page.
