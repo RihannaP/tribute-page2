@@ -26,6 +26,30 @@ const getHeader = document.querySelectorAll("header"),
   getImage = document.querySelectorAll("img"),
   getWords = document.body.innerText;
 
+var images;
+
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  images = ['https://dvyvvujm9h0uq.cloudfront.net/com/articles/1542633552-erico-marcelino-235177-unsplash.jpg', 'https://www.blackandwhitephotographymag.co.uk/wp-content/uploads/2022/09/BW270-cover-600x410.jpg', 'https://i.ytimg.com/vi/hO2-uGqBytQ/hqdefault.jpg'];
+  let element_img = document.getElementById('img');
+  element_img.setAttribute("src", images[0]);
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_img2 = document.getElementById('img');
+  images.unshift(images.slice(-1)[0]);
+  element_img2.setAttribute("src", images.pop());
+
+});
+
+document.getElementById('next').addEventListener('click', (event) => {
+  let element_img3 = document.getElementById('img');
+  images.push(images[0]);
+  element_img3.setAttribute("src", images.shift());
+
+});
 /* =================
    ASSERTIONS 
    These are the things we check are true about your page.
