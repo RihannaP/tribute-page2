@@ -31,7 +31,7 @@ var images;
 
 
 document.getElementById('button').addEventListener('click', (event) => {
-  images = ['https://dvyvvujm9h0uq.cloudfront.net/com/articles/1542633552-erico-marcelino-235177-unsplash.jpg', 'https://www.blackandwhitephotographymag.co.uk/wp-content/uploads/2022/09/BW270-cover-600x410.jpg', 'https://i.ytimg.com/vi/hO2-uGqBytQ/hqdefault.jpg'];
+  images = ['https://cdn.tinybuddha.com/wp-content/uploads/2015/09/Follow-Your-Dreams1.png'];
   let element_img = document.getElementById('img');
   element_img.setAttribute("src", images[0]);
 
