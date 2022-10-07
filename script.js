@@ -30,20 +30,25 @@ const getHeader = document.querySelectorAll("header"),
 var images;
 
 
-images = ['https://cdn.tinybuddha.com/wp-content/uploads/2015/09/Follow-Your-Dreams1.png', 'https://addicted2success.com/wp-content/uploads/2012/03/16-Reasons-Why-It%E2%80%99s-So-Important-To-Follow-Your-Dreams.png''https://cdn.tinybuddha.com/wp-content/uploads/2017/03/Man-with-balloons.jpg'];
 
+document.getElementById('button').addEventListener('click', (event) => {
+  images = ['https://cdn.tinybuddha.com/wp-content/uploads/2015/09/Follow-Your-Dreams1.png', 'https://addicted2success.com/wp-content/uploads/2012/03/16-Reasons-Why-It%E2%80%99s-So-Important-To-Follow-Your-Dreams.png', 'https://cdn.tinybuddha.com/wp-content/uploads/2017/03/Man-with-balloons.jpg'];
+  let element_img = document.getElementById('img');
+  element_img.setAttribute("src", images[0]);
+
+});
 
 document.getElementById('next').addEventListener('click', (event) => {
-  let element_img = document.getElementById('img');
+  let element_img2 = document.getElementById('img');
   images.push(images[0]);
-  element_img.setAttribute("src", images.shift());
+  element_img2.setAttribute("src", images.shift());
 
 });
 
 document.getElementById('previous').addEventListener('click', (event) => {
-  let element_img2 = document.getElementById('img');
+  let element_img3 = document.getElementById('img');
   images.unshift(images.slice(-1)[0]);
-  element_img2.setAttribute("src", images.pop());
+  element_img3.setAttribute("src", images.pop());
 
 });
 
