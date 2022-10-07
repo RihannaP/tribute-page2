@@ -30,10 +30,11 @@ var images;
 
 
 
-document.getElementById('button').addEventListener('click', (event) => {
+document.getElementById('next').addEventListener('click', (event) => {
   images = ['https://cdn.tinybuddha.com/wp-content/uploads/2015/09/Follow-Your-Dreams1.png'];
   let element_img = document.getElementById('img');
-  element_img.setAttribute("src", images[0]);
+  images.push(images[0]);
+  element_img.setAttribute("src", images.shift());
 
 });
 
@@ -44,12 +45,6 @@ document.getElementById('previous').addEventListener('click', (event) => {
 
 });
 
-document.getElementById('next').addEventListener('click', (event) => {
-  let element_img3 = document.getElementById('img');
-  images.push(images[0]);
-  element_img3.setAttribute("src", images.shift());
-
-});
 /* =================
    ASSERTIONS 
    These are the things we check are true about your page.
