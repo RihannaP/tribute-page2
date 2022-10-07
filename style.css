@@ -28,6 +28,8 @@ body {
  font-family: monospace, Lobster;
 
 }
+#img_dream{
+  position="center"
 .description{
   background-color: rgb(245, 245, 228);
   text-align: center;
