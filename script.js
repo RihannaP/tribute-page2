@@ -30,7 +30,7 @@ const getHeader = document.querySelectorAll("header"),
 var images;
 
 
-images = ['https://cdn.tinybuddha.com/wp-content/uploads/2015/09/Follow-Your-Dreams1.png'];
+images = ['https://cdn.tinybuddha.com/wp-content/uploads/2015/09/Follow-Your-Dreams1.png', 'https://addicted2success.com/wp-content/uploads/2012/03/16-Reasons-Why-It%E2%80%99s-So-Important-To-Follow-Your-Dreams.png'];
 
 
 document.getElementById('next').addEventListener('click', (event) => {
